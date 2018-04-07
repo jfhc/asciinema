@@ -4,7 +4,10 @@ import json
 import json.decoder
 import time
 import codecs
-from multiprocessing import Process, Queue
+#from multiprocessing import Process, Queue
+
+from threading import Thread as Process
+from queue import Queue
 
 from asciinema.pty_recorder import PtyRecorder
 
